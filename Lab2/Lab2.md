@@ -106,11 +106,11 @@ In this lab, you will deploy a simple Dockerized web application and implement e
    * In the application directory, create a file named Dockerfile with the following content:  
       
 
- ``` FROM python:3.9-slim
- WORKDIR /app
- COPY . /app
- RUN pip install \-r requirements.txt
- CMD ["python", "app.py"] ```
+   FROM python:3.9-slim
+   WORKDIR /app
+   COPY . /app
+   RUN pip install \-r requirements.txt
+   CMD ["python", "app.py"]
 
 
    * This Dockerfile instructs Docker on how to build your web application image.
